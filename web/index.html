@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>API-REST</title>
+</head>
+<body>
+  <div class="seccion-superior">
+    <h1>ALFEM-SEARCH</h1>
+
+    <div class="buscar-div">
+        <form action="post" id="formulario-buscar">
+            <input type="submit" value="Consultar todo" class="consult"></input>
+        </form>
+    </div>
+  </div>
+    
+  <div class="seccion-inferior">
+    <div class="insertar-div oculto">
+        <form action="#" id="formulario-insertar">
+            <h2>INSERTAR</h2>
+            <label for="proveedor">Inserta el proveedor</label> <br> 
+            <input type="text" name="" id="proveedor" required><br>
+            <label for="producto">Nombre del producto</label> <br>
+            <input type="text" name="" id="producto" required><br>
+            <label for="cantidad">cantidad</label> <br>
+            <input type="text" name="" id="cantidad" required><br>
+            <label for="precio">Precio total</label> <br>
+            <input type="text" name="" id="precio" required><br>
+            <input type="submit" value="Insertar Artículo" id="btnFin">
+        </form>
+    </div>
+
+    <div class="actualizar-div oculto">
+        <h2>ACTUALIZAR DATOS</h2>
+        <form action="#" id="formulario-actualizar">
+            <label for="proveedor">Proveedor</label><br>
+            <input type="text" name="" id="proveedorActualizar" placeholder="Nombre proveedor" required><br>
+            <label for="producto">Nombre del producto</label><br>
+            <input type="text" name="" id="productoActualizar" placeholder="Producto" required><br>
+            <label for="cantidad">cantidad</label><br>
+            <input type="text" name="" id="cantidadActualizar" placeholder="Cantidad" required><br>
+            <label for="precio">Precio total</label><br>
+            <input type="text" name="" id="precioActualizar" placeholder="Costo" required><br>
+            <input type="submit" class="postInput" value="Actualizar Artículo" id="btnFin" disabled>
+        </form>
+    </div>
+
+    <!-- BLOQUE PARALA TABLA -->
+    <div id="tabla-div" class="oculto">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th>Índice</th>
+              <th>ID Artículos</th>
+              <th>Proveedor</th>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Costo</th>
+              <th>Actualizar</th> <!-- Nueva celda para el título del botón "Actualizar" -->
+              <th>Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se agregarán las filas dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+  </div>
+      
+</body>
+</html>

@@ -8,7 +8,7 @@ const cors = require('cors')
 const app = express()
 app.set('port', process.env.PORT || 3000)
 const dbOptions = {
-    host: 'localhost',
+    host: '127.0.0.1',
     port: 3306,
     user: 'root',
     password: '180317Fm',
